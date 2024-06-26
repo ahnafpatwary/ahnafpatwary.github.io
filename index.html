@@ -17,31 +17,38 @@
             align-items: center;
             height: 100vh;
         }
-        .content {
-            background-color: #1f1f1f;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-            padding: 40px;
+        .container {
+            display: flex;
             max-width: 900px;
             width: 100%;
-            text-align: left;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 40px;
         }
-        .content .left-section {
-            max-width: 70%;
+        .left-section {
+            max-width: 60%;
             padding-right: 40px;
         }
-        .content .right-section {
-            max-width: 30%;
+        .right-section {
+            max-width: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-picture {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
         }
         h1 {
-            font-size: 32px;
+            font-size: 36px;
             margin-bottom: 10px;
         }
+        h2 {
+            font-size: 24px;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
         p {
-            font-size: 20px;
+            font-size: 18px;
             line-height: 1.6;
             margin-bottom: 20px;
         }
@@ -63,15 +70,15 @@
     </style>
 </head>
 <body>
-    <div class="content">
+    <div class="container">
         <div class="left-section">
             <h1>Your Name</h1>
-            <p>Your Headline</p>
-            <p>About paragraph goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui consectetur, eu vestibulum velit viverra. Mauris in nulla ac lorem semper malesuada.</p>
+            <h2>Your Headline</h2>
+            <p><em>About paragraph goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui consectetur, eu vestibulum velit viverra. Mauris in nulla ac lorem semper malesuada.</em></p>
             <a href="https://your-linktree-url" class="contact-button">Contact</a>
         </div>
         <div class="right-section">
-            <img src="path/to/your/profile-picture.jpg" alt="Profile Picture">
+            <img src="path/to/your/profile-picture.jpg" alt="Profile Picture" class="profile-picture">
         </div>
     </div>
 </body>
