@@ -14,16 +14,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
         .container {
-            max-width: 90%;
-            width: 800px; /* Adjust width as per your preference */
-            text-align: center;
+            width: 90%;
+            max-width: 900px; /* Adjust max-width as per your preference */
+            text-align: left;
+            padding: 40px;
+            box-sizing: border-box;
         }
         .profile {
             float: right;
-            margin-left: 20px;
             max-width: 200px;
             width: 100%;
             height: auto;
@@ -36,14 +37,16 @@
         }
         .headline {
             font-size: 1.2em;
-            font-style: italic;
             margin-bottom: 20px;
+        }
+        .about-heading {
+            font-size: 1.5em;
+            margin-bottom: 10px;
         }
         .about-text {
             font-size: 1.1em;
             line-height: 1.6;
             margin-bottom: 20px;
-            text-align: left;
         }
         .contact-button {
             display: inline-block;
@@ -63,21 +66,23 @@
 <body>
     <div class="container">
         <img src="Picture.jpeg" alt="Profile Picture" class="profile">
-        <h1 class="title">Ahnaf Tahmid Patwary</h1>
-        <p class="headline">Film, Science, and Economics Enthusiast, Passionately Exploring Interdisciplinary Perspectives.</p>
-        
-        <h2 class="about-heading">Exploring the intersections of creativity, science, and beyond.</h2>
-        <p class="about-text">
-            My passion lies in understanding the intricacies of different areas, from the captivating world of films to the complexities of economic theories and scientific discoveries. I feel that great learning has no limits, and I am constantly seeking to broaden my horizons through interdisciplinary exploration.
-        </p>
-        <p class="about-text">
-            In my quest for understanding, I find fulfillment in uncovering connections between seemingly disparate disciplines, whether it's delving into the psychology behind effective branding or exploring the mysteries of astrophysics. I am fascinated by the intersections of different disciplines and strive to cultivate a holistic understanding of the world.
-        </p>
-        <p class="about-text">
-            Driven by a diverse range of interests, I embark on an ongoing journey of exploration. Yet, this journey is only getting started! Embracing lifelong learning, each day presents a new chance to expand the horizons of my understanding and curiosity.
-        </p>
-        
-        <a href="https://your-linktree-profile-url" target="_blank" class="contact-button">Contact</a>
+        <div style="float: left; width: calc(100% - 220px);">
+            <h1 class="title">Ahnaf Tahmid Patwary</h1>
+            <p class="headline">Film, Science, and Economics Enthusiast, Passionately Exploring Interdisciplinary Perspectives.</p>
+            
+            <h2 class="about-heading">Exploring the intersections of creativity, science, and beyond.</h2>
+            <p class="about-text">
+                My passion lies in understanding the intricacies of different areas, from the captivating world of films to the complexities of economic theories and scientific discoveries. I feel that great learning has no limits, and I am constantly seeking to broaden my horizons through interdisciplinary exploration.
+            </p>
+            <p class="about-text">
+                In my quest for understanding, I find fulfillment in uncovering connections between seemingly disparate disciplines, whether it's delving into the psychology behind effective branding or exploring the mysteries of astrophysics. I am fascinated by the intersections of different disciplines and strive to cultivate a holistic understanding of the world.
+            </p>
+            <p class="about-text">
+                Driven by a diverse range of interests, I embark on an ongoing journey of exploration. Yet, this journey is only getting started! Embracing lifelong learning, each day presents a new chance to expand the horizons of my understanding and curiosity.
+            </p>
+            
+            <a href="https://your-linktree-profile-url" target="_blank" class="contact-button">Contact</a>
+        </div>
     </div>
 </body>
 </html>
