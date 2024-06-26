@@ -19,17 +19,21 @@
         .container {
             width: 95%; /* Adjust width percentage as per your preference */
             max-width: 1200px; /* Adjust max-width as per your preference */
-            text-align: left;
+            text-align: center; /* Center align container */
             padding: 40px;
             box-sizing: border-box;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically on smaller screens */
+            align-items: center;
+            position: relative; /* Ensure relative positioning for absolute elements */
         }
         .profile {
-            float: right;
             max-width: 200px;
             width: 100%;
             height: auto;
             border-radius: 50%;
-            margin-top: 2px; /* Adjust margin-top to align with the title */
+            margin-top: 10px; /* Adjust margin-top to align with the title */
+            margin-bottom: 20px; /* Adjust margin-bottom */
         }
         .title {
             font-size: 2.5em;
@@ -40,12 +44,10 @@
         .headline {
             font-size: 1.2em;
             margin-bottom: 30px; /* Increased space between headline and about heading */
-            text-align: left;
         }
         .about-heading {
             font-size: 1.5em;
             margin-bottom: 10px;
-            text-align: left;
         }
         .about-text {
             font-size: 1.1em;
@@ -63,6 +65,7 @@
             font-size: 1.2em;
             transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add border-color transition */
             border: 2px solid #fff; /* White border */
+            margin-top: 20px; /* Add margin to separate from about text */
         }
         .contact-button:hover {
             background-color: #000;
@@ -76,12 +79,43 @@
             position: absolute;
             bottom: 0;
         }
+
+        /* Responsive adjustments */
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 20px; /* Adjust padding for smaller screens */
+            }
+            .profile {
+                float: none;
+                margin: auto; /* Center profile picture on smaller screens */
+                margin-bottom: 10px; /* Adjust margin-bottom */
+            }
+            .title {
+                font-size: 2em; /* Decrease font size for title on smaller screens */
+            }
+            .headline {
+                font-size: 1em; /* Decrease font size for headline on smaller screens */
+                margin-bottom: 20px; /* Decrease space between headline and about heading */
+            }
+            .about-heading {
+                font-size: 1.3em; /* Decrease font size for about heading on smaller screens */
+            }
+            .about-text {
+                font-size: 1em; /* Decrease font size for about text on smaller screens */
+            }
+            .contact-button {
+                font-size: 1em; /* Decrease font size for contact button on smaller screens */
+            }
+            .copyright {
+                font-size: 0.8em; /* Decrease font size for copyright text on smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <img src="Picture.jpeg" alt="Profile Picture" class="profile">
-        <div style="float: left; width: calc(100% - 220px);">
+        <div>
             <h1 class="title">Ahnaf Tahmid Patwary</h1>
             <p class="headline">Film, Science, and Economics Enthusiast, Passionately Exploring Interdisciplinary Perspectives.</p>
             
