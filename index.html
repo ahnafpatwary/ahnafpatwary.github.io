@@ -18,12 +18,15 @@
         .container {
             width: 95%; /* Adjust width percentage as per your preference */
             max-width: 1200px; /* Adjust max-width as per your preference */
-            text-align: left;
+            text-align: center; /* Center align container */
+            margin: auto; /* Center align container */
             padding: 40px;
             box-sizing: border-box;
             flex: 1; /* Fill remaining vertical space */
             display: flex;
             align-items: center;
+            justify-content: center;
+            flex-wrap: wrap; /* Allow content to wrap */
         }
         .profile {
             max-width: 200px;
@@ -31,7 +34,7 @@
             height: auto;
             border-radius: 50%;
             margin-top: 10px; /* Adjust margin-top to align with the title */
-            margin-right: 20px; /* Adjust margin-right */
+            margin-bottom: 20px; /* Adjust margin-bottom */
         }
         .title {
             font-size: 2.5em;
@@ -42,18 +45,21 @@
         .headline {
             font-size: 1.2em;
             margin-bottom: 30px; /* Increased space between headline and about heading */
-            text-align: left;
+            text-align: center; /* Center align headline */
+            width: 100%; /* Ensure full width */
         }
         .about-heading {
             font-size: 1.5em;
             margin-bottom: 10px;
-            text-align: left;
+            text-align: left; /* Left align about heading */
+            width: 100%; /* Ensure full width */
         }
         .about-text {
             font-size: 1.1em;
             line-height: 1.6;
             margin-bottom: 20px;
             text-align: justify;
+            width: 100%; /* Ensure full width */
         }
         .contact-button {
             display: inline-block;
@@ -75,16 +81,18 @@
             font-size: 0.9em; /* Smaller font size */
             text-align: center; /* Center alignment */
             padding: 20px 0; /* Padding for spacing */
+            width: 100%;
             position: absolute;
             bottom: 0;
-            width: 100%;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="Picture.jpeg" alt="Profile Picture" class="profile">
-        <div>
+        <div style="flex: 1; text-align: left;">
+            <img src="Picture.jpeg" alt="Profile Picture" class="profile">
+        </div>
+        <div style="flex: 1; text-align: left;">
             <h1 class="title">Ahnaf Tahmid Patwary</h1>
             <p class="headline">Film, Science, and Economics Enthusiast, Passionately Exploring Interdisciplinary Perspectives.</p>
             
