@@ -12,8 +12,7 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column;
             min-height: 100vh;
         }
         .container {
@@ -22,14 +21,17 @@
             text-align: left;
             padding: 40px;
             box-sizing: border-box;
+            flex: 1; /* Fill remaining vertical space */
+            display: flex;
+            align-items: center;
         }
         .profile {
-            float: right;
             max-width: 200px;
             width: 100%;
             height: auto;
             border-radius: 50%;
             margin-top: 10px; /* Adjust margin-top to align with the title */
+            margin-right: 20px; /* Adjust margin-right */
         }
         .title {
             font-size: 2.5em;
@@ -38,7 +40,8 @@
             margin-top: 0; /* Ensure top margin is 0 to align with profile picture */
         }
         .headline {
-            font-size: 1.2em;
+            font-size: 1.5em;
+            font-style: italic;
             margin-bottom: 30px; /* Increased space between headline and about heading */
             text-align: left;
         }
@@ -68,18 +71,23 @@
         .contact-button:hover {
             background-color: #000;
             color: #fff;
+            border-color: #000; /* Border color on hover */
         }
         .copyright {
             font-size: 0.9em; /* Smaller font size */
             text-align: center; /* Center alignment */
-            margin-top: 40px; /* Adjust margin top as needed */
+            padding: 20px 0; /* Padding for spacing */
+            background-color: rgba(255, 255, 255, 0.1); /* Optional: Background color for visibility */
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="Picture.jpeg" alt="Profile Picture" class="profile">
-        <div style="float: left; width: calc(100% - 220px);">
+        <img src="your-profile-picture.jpg" alt="Profile Picture" class="profile">
+        <div>
             <h1 class="title">Ahnaf Tahmid Patwary</h1>
             <p class="headline">Film, Science, and Economics Enthusiast, Passionately Exploring Interdisciplinary Perspectives.</p>
             
