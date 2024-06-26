@@ -17,7 +17,7 @@
             align-items: center;
             height: 100vh;
         }
-        .container {
+        .content {
             background-color: #1f1f1f;
             border-radius: 8px;
             box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
@@ -28,16 +28,13 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin: 20px;
         }
-        .content {
+        .content .left-section {
             max-width: 70%;
             padding-right: 40px;
         }
-        .profile-picture {
+        .content .right-section {
             max-width: 30%;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
         }
         h1 {
             font-size: 32px;
@@ -66,14 +63,16 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="content">
+    <div class="content">
+        <div class="left-section">
             <h1>Your Name</h1>
             <p>Your Headline</p>
             <p>About paragraph goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui consectetur, eu vestibulum velit viverra. Mauris in nulla ac lorem semper malesuada.</p>
             <a href="https://your-linktree-url" class="contact-button">Contact</a>
         </div>
-        <img src="path/to/your/profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+        <div class="right-section">
+            <img src="path/to/your/profile-picture.jpg" alt="Profile Picture">
+        </div>
     </div>
 </body>
 </html>
