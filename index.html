@@ -16,6 +16,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            flex-direction: column;
         }
         .container {
             width: 95%;
@@ -74,14 +75,18 @@
             text-align: center; /* Center alignment */
             padding: 20px 0; /* Padding for spacing */
             width: 100%;
-            position: absolute;
-            bottom: 0;
+            position: relative; /* Use relative positioning to ensure it stays in place */
         }
 
         /* Mobile-specific styles */
         @media (max-width: 600px) {
+            body {
+                flex-direction: column;
+                padding-bottom: 40px; /* Ensure there is space for the copyright */
+            }
             .container {
                 text-align: center;
+                padding: 20px;
             }
             .profile {
                 float: none;
@@ -90,11 +95,24 @@
             }
             .title, .headline, .about-heading, .about-text {
                 text-align: center;
+                width: 100%; /* Ensure full width on mobile */
+                float: none;
+                margin: 0 auto; /* Center align elements */
+            }
+            .about-text {
+                text-align: justify;
             }
             .contact-button {
                 display: block;
                 width: fit-content;
-                margin: 0 auto; /* Center align the button */
+                margin: 20px auto; /* Center align the button with margin */
+            }
+            .copyright {
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                padding-bottom: 20px;
             }
         }
     </style>
@@ -102,23 +120,19 @@
 <body>
     <div class="container">
         <img src="Picture.jpeg" alt="Profile Picture" class="profile">
-        <div style="float: left; width: calc(100% - 220px);">
-            <h1 class="title">Ahnaf Tahmid Patwary</h1>
-            <p class="headline">Film, Science, and Economics Enthusiast, Passionately Exploring Interdisciplinary Perspectives.</p>
-            
-            <h2 class="about-heading">Exploring the intersections of creativity, science, and beyond.</h2>
-            <p class="about-text">
-                My passion lies in understanding the intricacies of different areas, from the captivating world of films to the complexities of economic theories and scientific discoveries. I feel that great learning has no limits, and I am constantly seeking to broaden my horizons through interdisciplinary exploration.
-            </p>
-            <p class="about-text">
-                In my quest for understanding, I find fulfillment in uncovering connections between seemingly disparate disciplines, whether it's delving into the psychology behind effective branding or exploring the mysteries of astrophysics. I am fascinated by the intersections of different disciplines and strive to cultivate a holistic understanding of the world.
-            </p>
-            <p class="about-text">
-                Driven by a diverse range of interests, I embark on an ongoing journey of exploration. Yet, this journey is only getting started! Embracing lifelong learning, each day presents a new chance to expand the horizons of my understanding and curiosity.
-            </p>
-            
-            <a href="https://linktr.ee/ahnafpatwary" target="_blank" class="contact-button">Contact</a>
-        </div>
+        <h1 class="title">Ahnaf Tahmid Patwary</h1>
+        <p class="headline">Film, Science, and Economics Enthusiast, Passionately Exploring Interdisciplinary Perspectives.</p>
+        <h2 class="about-heading">Exploring the intersections of creativity, science, and beyond.</h2>
+        <p class="about-text">
+            My passion lies in understanding the intricacies of different areas, from the captivating world of films to the complexities of economic theories and scientific discoveries. I feel that great learning has no limits, and I am constantly seeking to broaden my horizons through interdisciplinary exploration.
+        </p>
+        <p class="about-text">
+            In my quest for understanding, I find fulfillment in uncovering connections between seemingly disparate disciplines, whether it's delving into the psychology behind effective branding or exploring the mysteries of astrophysics. I am fascinated by the intersections of different disciplines and strive to cultivate a holistic understanding of the world.
+        </p>
+        <p class="about-text">
+            Driven by a diverse range of interests, I embark on an ongoing journey of exploration. Yet, this journey is only getting started! Embracing lifelong learning, each day presents a new chance to expand the horizons of my understanding and curiosity.
+        </p>
+        <a href="https://linktr.ee/ahnafpatwary" target="_blank" class="contact-button">Contact</a>
     </div>
     <div class="copyright">
         &copy; 2024 Ahnaf Tahmid Patwary. All rights reserved.
