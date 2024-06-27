@@ -19,11 +19,11 @@
         .container {
             width: 95%;
             max-width: 1200px;
+            margin: auto;
             text-align: left;
             padding: 40px;
             box-sizing: border-box;
             flex: 1;
-            margin: auto;
         }
         .profile {
             float: right;
@@ -42,12 +42,10 @@
         .headline {
             font-size: 1.2em;
             margin-bottom: 30px; /* Increased space between headline and about heading */
-            text-align: left;
         }
         .about-heading {
             font-size: 1.5em;
             margin-bottom: 10px;
-            text-align: left;
         }
         .about-text {
             font-size: 1.1em;
@@ -65,8 +63,6 @@
             font-size: 1.2em;
             transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Add border-color transition */
             border: 2px solid #fff; /* White border */
-            text-align: center;
-            line-height: 1.2em; /* Center align text vertically */
         }
         .contact-button:hover {
             background-color: #000;
@@ -77,6 +73,7 @@
             text-align: center; /* Center alignment */
             padding: 20px 0; /* Padding for spacing */
             width: 100%;
+            margin-top: auto; /* Push to the bottom */
         }
 
         /* Mobile-specific styles */
@@ -115,6 +112,7 @@
                 display: block;
                 width: fit-content;
                 margin: 20px auto; /* Center align the button with margin */
+                text-align: center; /* Center align text inside button */
             }
         }
     </style>
