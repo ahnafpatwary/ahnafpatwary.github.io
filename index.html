@@ -13,10 +13,8 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
             flex-direction: column;
+            min-height: 100vh;
         }
         .container {
             width: 95%;
@@ -24,6 +22,7 @@
             text-align: left;
             padding: 40px;
             box-sizing: border-box;
+            flex: 1;
         }
         .profile {
             float: right;
@@ -75,18 +74,15 @@
             text-align: center; /* Center alignment */
             padding: 20px 0; /* Padding for spacing */
             width: 100%;
-            position: relative; /* Use relative positioning to ensure it stays in place */
         }
 
         /* Mobile-specific styles */
         @media (max-width: 600px) {
-            body {
-                flex-direction: column;
-                padding-bottom: 40px; /* Ensure there is space for the copyright */
-            }
             .container {
                 text-align: center;
                 padding: 20px;
+                float: none;
+                width: 100%; /* Ensure full width on mobile */
             }
             .profile {
                 float: none;
@@ -99,20 +95,23 @@
                 float: none;
                 margin: 0 auto; /* Center align elements */
             }
+            .title {
+                margin-bottom: 10px;
+            }
+            .headline {
+                margin-bottom: 30px;
+            }
+            .about-heading {
+                margin-bottom: 10px;
+            }
             .about-text {
+                margin-bottom: 20px;
                 text-align: justify;
             }
             .contact-button {
                 display: block;
                 width: fit-content;
                 margin: 20px auto; /* Center align the button with margin */
-            }
-            .copyright {
-                position: absolute;
-                bottom: 10px;
-                left: 0;
-                right: 0;
-                padding-bottom: 20px;
             }
         }
     </style>
