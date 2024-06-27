@@ -18,8 +18,8 @@
             min-height: 100vh;
         }
         .container {
-            width: 95%; /* Adjust width percentage as per your preference */
-            max-width: 1200px; /* Adjust max-width as per your preference */
+            width: 95%;
+            max-width: 1200px;
             text-align: left;
             padding: 40px;
             box-sizing: border-box;
@@ -76,6 +76,26 @@
             width: 100%;
             position: absolute;
             bottom: 0;
+        }
+
+        /* Mobile-specific styles */
+        @media (max-width: 600px) {
+            .container {
+                text-align: center;
+            }
+            .profile {
+                float: none;
+                margin: 0 auto 20px; /* Center the image on mobile with bottom margin */
+                display: block;
+            }
+            .title, .headline, .about-heading, .about-text {
+                text-align: center;
+            }
+            .contact-button {
+                display: block;
+                width: fit-content;
+                margin: 0 auto; /* Center align the button */
+            }
         }
     </style>
 </head>
